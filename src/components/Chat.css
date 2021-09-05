@@ -1,0 +1,110 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+
+.chat__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4e4e4;
+  border-bottom: 1px solid lightgray;
+}
+.chat__headerLeft {
+  margin: 10px;
+}
+.chat__headerCenter {
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.chat__headerRight {
+  margin-right: 10px;
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url("https://i.pinimg.com/originals/a9/13/12/a91312b7e47b919309dbc014a21053cc.jpg");
+  background-repeat: repeat;
+  object-fit: contain;
+  overflow: auto;
+  padding: 30px;
+}
+
+.chat__message{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: rgb(244, 255, 183);
+    margin-bottom: 30px;
+}
+.chat__reciever{
+  margin-left: auto;
+  background-color: greenyellow;
+}
+.chat__timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.chat__name{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: x-small;
+}
+.chat__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+.chat__footerCenter > form {
+  flex: 1;
+  display: flex;
+}
+.chat__footerCenter > form > input {
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  outline-width: 0;
+}
+.chat__footerCenter > form > button {
+  display: none;
+}
+.chat__footerCenter {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: transparent;
+  height: 39px;
+  padding: 10px;
+}
+/* .chat__footerInput {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+} */
+
+
+
+@media only screen and (max-width: 600px) {
+  .chat{
+    height: 80%;
+  }
+  .chat__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .chat__footer{
+    display: flex;
+    /* flex-direction: column; */
+  }
+}
